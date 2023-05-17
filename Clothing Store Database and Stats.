@@ -1,0 +1,37 @@
+--Create a clothing store database
+
+CREATE TABLE Gamer_Lounge_Wear (id INTEGER PRIMARY KEY, Name TEXT, Size TEXT, Price INTEGER, Rating INTEGER, Stock TEXT);
+
+INSERT INTO Gamer_Lounge_Wear VALUES (1, "XBOX Shirt", "Small", 20, 3, "Sold Out");
+INSERT INTO Gamer_Lounge_Wear VALUES (2, "XBOX Shirt", "Medium", 20,3, " In Stock");
+INSERT INTO Gamer_Lounge_Wear VALUES (3, "XBOX Shirt", "Large", 20,3, "In Stock");
+INSERT INTO Gamer_Lounge_Wear VALUES (4, "SWITCH Shirt", "Small", 20, 3.5, "In Stock");
+INSERT INTO Gamer_Lounge_Wear VALUES (5, "SWITCH Shirt", "Medium", 20, 3.5,"Sold Out");
+INSERT INTO Gamer_Lounge_Wear VALUES (6, "SWITCH Shirt", "Large", 20, 3.5, "In Stock");
+INSERT INTO GAMER_Lounge_Wear VALUES (7, "XBOX Pants", "Small", 25, 4, 
+"Sold Out");
+INSERT INTO GAMER_Lounge_Wear VALUES (8, "XBOX Pants", "Medium", 25, 4, "In Stock");
+INSERT INTO GAMER_Lounge_Wear VALUES (9, "XBOX Pants", "Large", 25, 4,"Sold Out");
+INSERT INTO GAMER_Lounge_Wear VALUES (10, "SWITCH Pants", "Small", 25, 4.7,"In Stock");
+INSERT INTO GAMER_Lounge_Wear VALUES (11, "SWITCH Pants", "Medium", 25, 4.7,"Sold Out");
+INSERT INTO GAMER_Lounge_Wear VALUES (12, "SWITCH Pants", "Large", 25, 4.7,"In Stock");
+INSERT INTO GAMER_Lounge_Wear Values (13, "XBOX Socks", "One Size",
+40, 5, "In Stock");
+INSERT INTO GAMER_Lounge_Wear Values (14, "SWITCH Socks", "One Size",
+40, 5, "In Stock");
+INSERT INTO GAMER_Lounge_Wear Values (15, "XBOX Socks", "One Size",
+40, 5, "In Stock");
+
+--Display the database ordered by Stock
+
+Select * FROM Gamer_Lounge_Wear ORDER BY stock;
+
+--Display the database ordered by Rating
+
+Select * FROM Gamer_Lounge_Wear ORDER BY rating desc;
+
+--What are the least popular items?
+
+Select Name, size, rating FROM Gamer_lounge_Wear ORDER BY rating asc limit 10; 
+
+
